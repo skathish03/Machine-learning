@@ -15,3 +15,22 @@ int main()
     printf("%d ",col[1]);
     return 0;
 }
+
+swap row:
+#include <stdio.h>
+
+int main()
+{
+    int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    int temp;
+    int n=1,m=2;
+    for(int r=0;r<3;r++){
+            for(int i=0;i<3;i++){
+                temp=a[n][i];
+                a[n][i]=a[m][i];
+                a[m][i]=temp;
+            }
+    }
+    printf("%d ",a[n][1]);
+    return 0;
+}
